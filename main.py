@@ -129,7 +129,7 @@ elif st.session_state.step == 3:
         st.subheader("Step 3 — Lifestyle")
         smoking = st.selectbox("Smoking Status", ["No Smoking", "Regular", "Occasional"])
         job = st.selectbox("Employment Status", ["Salaried", "Self-Employed", "Freelancer"])
-        income = st.number_input("Income in US Dollar", 0, 200)
+        income = st.number_input("Income in US Dollar", 0, 200000)
         col_btn = st.columns(2)
         if col_btn[0].button("Back", use_container_width=True): prev_step()
         if col_btn[1].button("Next ️", use_container_width=True):
